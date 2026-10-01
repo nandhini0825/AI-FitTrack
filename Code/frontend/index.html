@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT SIDE -->
+        <div class="left-section">
+
+            <h1>AI Fitness Assistant</h1>
+
+            <label>Fitness Goal</label>
+
+            <select id="goal">
+                <option value="General Fitness">General Fitness</option>
+                <option value="Weight Loss">Weight Loss</option>
+                <option value="Muscle Gain">Muscle Gain</option>
+                <option value="Healthy Lifestyle">Healthy Lifestyle</option>
+            </select>
+
+            <label>Age</label>
+            <input type="number" id="age" placeholder="Enter age">
+
+            <label>Weight (kg)</label>
+            <input type="number" id="weight" placeholder="Enter weight">
+
+            <label>Height (cm)</label>
+            <input type="number" id="height" placeholder="Enter height">
+
+            <button onclick="calculateBMI()">
+                Calculate BMI
+            </button>
+
+            <div class="bmi-box">
+
+                <h2>Your BMI</h2>
+
+                <p id="bmi">--</p>
+
+                <p>
+                    Status:
+                    <span id="status">--</span>
+                </p>
+
+            </div>
+
+            <button class="ai-button" onclick="getSuggestion()">
+                Get AI Suggestion
+            </button>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="right-section">
+
+            <div class="welcome-text">
+                <h2>Your AI Powered<br>
+                    Fitness Assistant</h2>
+            </div>
+
+            <div class="suggestion-card">
+
+                <h2>🤖 AI Fitness Suggestion</h2>
+
+                <p id="suggestion">
+                    Enter your details and click
+                    "Get AI Suggestion" to receive
+                    general fitness guidance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
